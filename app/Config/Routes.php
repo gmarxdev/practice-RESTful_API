@@ -15,6 +15,6 @@ $routes->get('/', 'Home::index');
 //     $routes->delete('users/(:num)', 'Api\UserController::delete/$1');
 // });
 
-$routes->group('api', ['namespace' => 'App\Controllers\Api'], function($routes) {
+$routes->group('api', ['namespace' => 'App\Controllers'], function($routes) {
     $routes->get('users', 'Api\UserController::index');
 });
