@@ -9,8 +9,9 @@ class Hello extends ResourceController
     public function index()
     {
         return $this->respond([
-            'ok'      => true,
-            'message' => 'Hello from CodeIgniter 4 API!',
+            'name'      => "Gielo Bandoy",
+            'email' => 'gmarbandoy@gmail.com',
+            'age' => 22,
             'time'    => date('c')
         ]);
     }
