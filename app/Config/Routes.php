@@ -16,5 +16,5 @@ $routes->get('/', 'Home::index');
 // });
 
 $routes->group('api', ['namespace' => 'App\Controllers\Api'], function($routes) {
-    $routes->resource('users');
+    $routes->get('users', 'Api\UserController::index');
 });
