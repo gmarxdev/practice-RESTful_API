@@ -8,9 +8,9 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 
 $routes->group('api', function($routes) {
-    $routes->get('users', 'Api\Users::index');
-    $routes->get('users/(:num)', 'Api\Users::show/$1');
-    $routes->post('users', 'Api\Users::create');
-    $routes->put('users/(:num)', 'Api\Users::update/$1');
-    $routes->delete('users/(:num)', 'Api\Users::delete/$1');
+    $routes->get('users', 'Api\UserController::index');
+    $routes->get('users/(:num)', 'Api\UserController::show/$1');
+    $routes->post('users', 'Api\UserController::create');
+    $routes->put('users/(:num)', 'Api\UserController::update/$1');
+    $routes->delete('users/(:num)', 'Api\UserController::delete/$1');
 });
