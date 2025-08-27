@@ -9,6 +9,10 @@ class UserController extends BaseController
 {
     public function index()
     {
-        //
+        return $this->respond([
+            'Name' => "Gielo Bandoy",
+            'Age' => 22,
+            'time' => date('c')
+        ]);
     }
 }
