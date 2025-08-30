@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
     <title>Fetch User Data with jQuery</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
@@ -10,12 +9,14 @@
     <pre id="output"></pre>
     <script>
         $.ajax( {
-            url: '/rest-api/api-call.html',
+            url: '/rest-api/public/api/users',
             method: 'GET',
             dataType: 'json',
+
             success: function(data) {
                 $('#output').text(JSON.stringify(data, null, 2));
             },
+
             error: function(xhr, status, error) {
                 $('#output').text('ERROR: ' + error);
             }
