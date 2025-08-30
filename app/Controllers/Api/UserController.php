@@ -11,6 +11,7 @@ class UserController extends ResourceController
         return $this->respond([
             'name'      => "Gielo Mar",
             'email'     => 'gmarbandoy@gmail.com',
+            'education' => 'Bachelor of Science in Computer Engineering',
             'age'       => 22,
             'time'      => date('c')
         ]);
